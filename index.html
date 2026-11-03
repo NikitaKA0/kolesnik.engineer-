@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="Content-Security-Policy" content="default-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;; object-src &#x27;none&#x27;; script-src &#x27;self&#x27;; style-src &#x27;self&#x27;; img-src &#x27;self&#x27; data:; font-src &#x27;self&#x27;; connect-src &#x27;none&#x27;; frame-src &#x27;none&#x27;; media-src &#x27;none&#x27;; manifest-src &#x27;self&#x27;">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="dark light">
+
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Никита Колесник — биотехнические системы, FMCW-радар, DSP, биомедицинские сигналы, ультразвук и кавитация." name="description"/>
+<meta content="#10151d" name="theme-color"/>
+<title>Никита Колесник — Biomedical R&amp;D / DSP / FMCW</title>
+<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="top-noise"></div>
+<header class="site-header">
+<a aria-label="На главную" class="brand" href="#top">
+<span aria-hidden="true" class="brand-mark">
+<svg viewbox="0 0 54 34"><path d="M2 19 C9 7,12 28,19 16 S30 11,36 19 S44 27,52 15"></path><circle cx="42" cy="8" r="5"></circle></svg>
+</span>
+<span>NK / R&amp;D</span>
+</a>
+<nav class="nav">
+<a data-i18n="nav_research" href="#research">Исследования</a>
+<a data-i18n="nav_work" href="#work">Работы</a><a data-i18n="nav_achievements" href="#achievements">Достижения</a>
+<a data-i18n="nav_publications" href="#publications">Публикации</a>
+<a data-i18n="nav_education" href="#education">Образование</a><a data-i18n="nav_faculty" href="#faculty">Преподаватели</a>
+<a data-i18n="nav_contact" href="#contact">Контакты</a>
+</nav>
+<button aria-label="Switch language" class="lang-toggle" id="langToggle">EN</button>
+</header>
+<main id="top">
+<section class="hero section">
+<div class="hero-copy">
+<div class="eyebrow" data-i18n="hero_eyebrow">Биотехнические системы • радиотехника • обработка сигналов</div>
+<h1><span data-i18n="first_name">Никита</span><span class="surname" data-i18n="last_name">Колесник</span></h1>
+<p class="hero-role" data-i18n="hero_role">Магистрант 12.04.04 «Биотехнические системы и технологии» • бакалавр с отличием • призёр Всероссийского конкурса ВКР</p>
+<p class="hero-lead" data-i18n="hero_lead">Исследовательский профиль на стыке FMCW-радиолокации, цифровой обработки биосигналов, ЭЭГ, медицинской электроники и ультразвуковых биотехнических систем.</p>
+<div class="chips"><span>FMCW</span><span>DSP</span><span>EEG / MNE</span><span>Biomedical R&amp;D</span><span data-i18n="chip_cavitation">Кавитация</span><span data-i18n="chip_instrumentation">Приборостроение</span></div>
+<div class="hero-actions">
+<a class="btn primary" data-i18n="cta_research" href="#publications">Научные работы</a>
+<a class="btn ghost" data-i18n="cta_contact" href="#contact">Связаться</a>
+<a class="btn text" data-i18n="cta_vcard" download="" href="nikita-kolesnik.vcf">Сохранить контакт</a>
+</div>
+</div>
+<div aria-hidden="true" class="hero-visual">
+<div class="lab-card">
+<div class="lab-top"><span>MPEI</span><span>12.04.04</span></div>
+<svg class="signal-art" viewbox="0 0 520 350">
+<defs><radialgradient cx="40%" cy="30%" id="bubble"><stop offset="0%" stop-color="#fff" stop-opacity=".9"></stop><stop offset="38%" stop-color="#d9e8ef" stop-opacity=".45"></stop><stop offset="70%" stop-color="#7697a8" stop-opacity=".16"></stop><stop offset="100%" stop-color="#15243a" stop-opacity=".03"></stop></radialgradient></defs>
+<path class="gridline" d="M40 82 H480 M40 172 H480 M40 262 H480"></path>
+<path class="wave" d="M32 190 C55 190 57 145 70 190 C82 235 90 114 106 190 C122 266 130 160 145 190 C172 244 190 95 212 190 C236 290 251 118 269 190 C287 244 300 164 318 190"></path>
+<path class="chirp" d="M320 190 q8 -22 16 0 t16 0 t16 0 t13 0 t12 0 t10 0 t9 0 t8 0 t7 0 t6 0 t5 0 t4 0"></path>
+<circle class="bubble" cx="400" cy="135" fill="url(#bubble)" r="55"></circle><circle class="bubble-line" cx="400" cy="135" r="55"></circle><circle class="bubble-line faint" cx="400" cy="135" r="82"></circle><circle class="bubble-line faint" cx="400" cy="135" r="108"></circle>
+<circle class="micro" cx="352" cy="90" r="8"></circle><circle class="micro" cx="444" cy="80" r="5"></circle><circle class="micro" cx="460" cy="158" r="10"></circle><circle class="micro" cx="350" cy="160" r="4"></circle>
+<text x="48" y="306">signal</text><text x="216" y="306">model</text><text x="382" y="306">system</text>
+</svg>
+<div class="lab-footer"><span data-i18n="hero_motto">от сигнала — к системе; от системы — к человеку</span></div>
+</div>
+</div>
+</section>
+<section aria-label="Key facts" class="stats-strip">
+<div><strong>2025</strong><span data-i18n="stat_bsc">бакалавриат с отличием, МЭИ</span></div>
+<div><strong>II место</strong><span data-i18n="stat_award">30-й Всероссийский конкурс ВКР</span></div>
+<div><strong>Призёр III</strong><span data-i18n="stat_robot">«Роботы в городе» — «Надежда энергетики»</span></div>
+<div><strong>2026</strong><span data-i18n="stat_outputs">опубликованные тезисы по FMCW-диагностике</span></div>
+</section>
+<section class="section" id="research">
+<div class="section-heading"><span class="section-index">01</span><div><h2 data-i18n="research_title">Исследовательские направления</h2><p data-i18n="research_intro">Основной интерес — измерить слабый физический или физиологический процесс, извлечь из сигнала структуру и превратить её в инженерно полезную модель.</p></div></div>
+<div class="research-grid">
+<article class="paper-card"><div class="icon radar"></div><h3>FMCW Radar</h3><p data-i18n="r_fmcw">Бесконтактная диагностика, мониторинг ритмических процессов, оценка параметров и архитектуры диагностических систем.</p><div class="mini-diagram"><span>TX</span><i></i><span>RX</span><i></i><span>FFT</span><i></i><span>features</span></div></article>
+<article class="paper-card"><div class="icon pulse"></div><h3>DSP &amp; Biosignals</h3><p data-i18n="r_dsp">Спектральный и временно-частотный анализ, фильтрация, выделение признаков, ЭЭГ и другие биомедицинские сигналы; Python/MNE и методы классификации.</p><div class="sparkline"></div></article>
+<article class="paper-card"><div class="icon bubble-icon"></div><h3 data-i18n="r_cav_title">Ультразвук и кавитация</h3><p data-i18n="r_cav">Математические модели пузырьковой динамики, медицинские применения ультразвука, верификация моделей и экспериментальные стенды.</p><div class="bubble-row"><b></b><b></b><b></b><b></b></div></article>
+<article class="paper-card"><div class="icon chip"></div><h3>Biomedical Instrumentation</h3><p data-i18n="r_inst">Медицинская электроника, датчики, аналоговый тракт, цифровая обработка и прототипирование измерительных систем.</p><div class="mini-diagram"><span>sensor</span><i></i><span>ADC</span><i></i><span>DSP</span><i></i><span>UI</span></div></article>
+</div>
+</section>
+<section class="section tone-section" id="work">
+<div class="section-heading"><span class="section-index">02</span><div><h2 data-i18n="work_title">Избранные работы и проекты</h2><p data-i18n="work_intro">Не только темы интереса, а конкретные учебные и исследовательские траектории.</p></div></div>
+<div class="projects">
+<article class="project featured"><div class="project-meta"><span>2025</span><span class="badge" data-i18n="badge_thesis">ВКР</span></div><h3 data-i18n="p_myograph_title">Разработка немедицинского миографа</h3><p data-i18n="p_myograph_text">Инженерная линия от курсового проекта до ВКР: 4–6 беспроводных модулей поверхностной ЭМГ, BluetoothLE/NRF52832, проектирование печатной платы, корпуса и обработка сигналов.</p><div class="project-flow"><span>электроды</span><i></i><span data-i18n="afe_label">Аналоговый тракт</span><i></i><span>NRF52832</span><i></i><span>BLE</span></div></article>
+<article class="project"><div class="project-meta"><span>2025</span><span class="badge" data-i18n="badge_research">НИР</span></div><h3 data-i18n="p_cav_title">Кавитация в медицинских применениях</h3><p data-i18n="p_cav_text">Большой исследовательский отчёт по теории кавитации, медицинским применениям и облику экспериментального стенда; переход к CFD-моделированию и валидации.</p><div class="project-tags"><span>Rayleigh–Plesset</span><span>VOF</span><span>Level Set</span><span>PIV</span></div></article>
+<article class="project research-project"><div class="project-meta"><span>2024</span><span class="badge" data-i18n="badge_research">НИР</span></div><h3 data-i18n="p_eeg_title">ЭЭГ-анализ для выявления феномена «скрытого сознания»</h3><p data-i18n="p_eeg_text">Исследовательская практика на кафедре ОРТ: обработка экспериментальных ЭЭГ-данных, режекторная фильтрация, спектральная плотность мощности, Python/MNE и разбор SVM-подхода к классификации.</p><div class="project-tags"><span>EEG</span><span>Python</span><span>MNE</span><span>SVM</span><span>PSD</span></div></article>
+<article class="project practice-project"><div class="project-meta"><span>2024</span><span class="badge" data-i18n="badge_practice">Практика</span></div><h3 data-i18n="p_aurum_title">Практика в сфере медицинского оборудования</h3><p data-i18n="p_aurum_text">ООО «АУРУМ»: техническая документация, подбор оборудования, выезды с инженерами на приёмку и ввод в эксплуатацию рентгеновских, эндоскопических и физиотерапевтических систем.</p><div class="project-tags"><span>X-ray</span><span>STORZ</span><span>Sonopulse</span><span>acceptance</span></div></article>
+<article class="project"><div class="project-meta"><span>2023</span><span class="badge" data-i18n="badge_coursework">Расчётная работа</span></div><h3 data-i18n="p_nmr_title">ЯМР-спектрометр: сканирование магнитным полем</h3><p data-i18n="p_nmr_text">Типовой расчёт по курсу «Специальные вопросы биофизики»: математическая модель ЯМР-сигнала, уравнения Блоха, расчёт резонансных пиков и влияния температуры.</p><div class="project-tags"><span>NMR</span><span>Bloch equations</span><span>Mathcad</span><span>biophysics</span></div></article>
+<article class="project"><div class="project-meta"><span>2025</span><span class="badge" data-i18n="badge_coursework">Учебная работа</span></div><h3 data-i18n="p_emd_title">Алгоритм разложения сигнала на эмпирические моды</h3><p data-i18n="p_emd_text">Разбор Empirical Mode Decomposition для нестационарных сигналов: алгоритм выделения IMF, программная реализация, тестовый сигнал и оценка ошибки восстановления.</p><div class="project-tags"><span>EMD</span><span>IMF</span><span>non-stationary signals</span><span>MATLAB</span></div></article>
+<article class="project"><div class="project-meta"><span>2025</span><span class="badge" data-i18n="badge_teaching">Педагогика</span></div><h3 data-i18n="p_teach_title">Практическое занятие по «Цепям и сигналам в медицинской электронике»</h3><p data-i18n="p_teach_text">Итоговая работа по профессиональной переподготовке: технологическая карта, содержание и иллюстративные материалы для инженерного занятия.</p><div class="project-tags"><span>teaching design</span><span>signals</span><span>medical electronics</span></div></article>
+</div>
+<div class="engineering-archive" id="archive">
+<div class="archive-head">
+<span data-i18n="archive_label">Инженерный архив</span>
+<p data-i18n="archive_intro">Шесть материалов из загруженных работ: оригинальные схемы, результаты расчётов, изображения и фотография из отчёта по практике. Для каждого указан первоисточник и страницы PDF.</p>
+</div>
+<div class="archive-grid">
+<article class="archive-card">
+<a aria-label="Увеличить оригинальный фрагмент" class="archive-visual" href="assets/archive/myograph-pcb.webp" rel="noopener noreferrer" target="_blank">
+<img alt="Датчик миографа: печатная плата" decoding="async" loading="lazy" src="assets/archive/myograph-pcb.webp"/>
+</a>
+<div class="archive-details">
+<div class="archive-meta">2024 · EMG / PCB</div>
+<h3 data-i18n="archive_pcb_title">Датчик миографа: печатная плата</h3>
+<p data-i18n="archive_pcb_text">Проект трассировки платы датчика пЭМГ и электрическая схема из курсовой работы. Также приложена 3D-модель корпуса — это чертежи, а не фотографии изготовленного устройства.</p>
+<div class="archive-extra">
+<a data-i18n="archive_pcb_extra0" href="assets/archive/myograph-schematic.webp" rel="noopener noreferrer" target="_blank">Схема NRF52832 ↗</a>
+<a data-i18n="archive_pcb_extra1" href="assets/archive/myograph-housing.webp" rel="noopener noreferrer" target="_blank">3D-модель корпуса ↗</a>
+</div>
+<div class="archive-provenance"><span data-i18n="archive_source_label">Источник:</span> <code>КП_КолесникНА.pdf</code> · <span data-i18n="archive_pcb_pages">стр. 14, 18–19</span></div>
+<a class="archive-pdf" data-i18n="archive_open_pdf" href="docs/archive/myograph_selected_pages_2024.pdf" rel="noopener noreferrer" target="_blank">Открыть выдержку PDF ↗</a>
+</div></article>
+<article class="archive-card">
+<a aria-label="Увеличить оригинальный фрагмент" class="archive-visual" href="assets/archive/emd-decomposition.webp" rel="noopener noreferrer" target="_blank">
+<img alt="Эмпирическая модовая декомпозиция" decoding="async" loading="lazy" src="assets/archive/emd-decomposition.webp"/>
+</a>
+<div class="archive-details">
+<div class="archive-meta">2025 · DSP / EMD</div>
+<h3 data-i18n="archive_emd_title">Эмпирическая модовая декомпозиция</h3>
+<p data-i18n="archive_emd_text">Тестовый сигнал из трёх гармоник с шумом, графики выделенных IMF, сравнение с восстановленным сигналом и листинг алгоритма в MATLAB.</p>
+<div class="archive-provenance"><span data-i18n="archive_source_label">Источник:</span> <code>EMD_Колесник_МОБС_реферат_.pdf</code> · <span data-i18n="archive_emd_pages">стр. 7–9, 12–15</span></div>
+<a class="archive-pdf" data-i18n="archive_open_pdf" href="docs/archive/EMD_selected_pages_2025.pdf" rel="noopener noreferrer" target="_blank">Открыть выдержку PDF ↗</a>
+</div></article>
+<article class="archive-card">
+<a aria-label="Увеличить оригинальный фрагмент" class="archive-visual" href="assets/archive/nmr-spectrum.webp" rel="noopener noreferrer" target="_blank">
+<img alt="ЯМР: расчёт спектрального отклика" decoding="async" loading="lazy" src="assets/archive/nmr-spectrum.webp"/>
+</a>
+<div class="archive-details">
+<div class="archive-meta">2023 · NMR / MATHCAD</div>
+<h3 data-i18n="archive_nmr_title">ЯМР: расчёт спектрального отклика</h3>
+<p data-i18n="archive_nmr_text">Расчёт зависимости сигнала катушки от сканирующего магнитного поля с двумя резонансными пиками. Модель и расчёт приведены в учебной работе по биофизике.</p>
+<div class="archive-provenance"><span data-i18n="archive_source_label">Источник:</span> <code>ТР_ЭР-17-21_КолесникНА.pdf</code> · <span data-i18n="archive_nmr_pages">стр. 8–12</span></div>
+<a class="archive-pdf" data-i18n="archive_open_pdf" href="docs/archive/NMR_selected_pages_2023.pdf" rel="noopener noreferrer" target="_blank">Открыть выдержку PDF ↗</a>
+</div></article>
+<article class="archive-card">
+<a aria-label="Увеличить оригинальный фрагмент" class="archive-visual" href="assets/archive/eeg-filter.webp" rel="noopener noreferrer" target="_blank">
+<img alt="ЭЭГ: цифровая фильтрация" decoding="async" loading="lazy" src="assets/archive/eeg-filter.webp"/>
+</a>
+<div class="archive-details">
+<div class="archive-meta">2024 · EEG / MNE</div>
+<h3 data-i18n="archive_eeg_title">ЭЭГ: цифровая фильтрация</h3>
+<p data-i18n="archive_eeg_text">Схема КИХ-фильтра из отчёта по исследовательской практике; раздел об использовании MNE-Python и фильтрации, без исходных записей пациентов.</p>
+<div class="archive-provenance"><span data-i18n="archive_source_label">Источник:</span> <code>КолесникНА__отчёт_о_практике.pdf</code> · <span data-i18n="archive_eeg_pages">стр. 14–15</span></div>
+<a class="archive-pdf" data-i18n="archive_open_pdf" href="docs/archive/EEG_method_excerpt_2024.pdf" rel="noopener noreferrer" target="_blank">Открыть выдержку PDF ↗</a>
+</div></article>
+<article class="archive-card">
+<a aria-label="Увеличить оригинальный фрагмент" class="archive-visual" href="assets/archive/cavitation-equation.webp" rel="noopener noreferrer" target="_blank">
+<img alt="Теория кавитации: динамика пузырька" decoding="async" loading="lazy" src="assets/archive/cavitation-equation.webp"/>
+</a>
+<div class="archive-details">
+<div class="archive-meta">2025 · ACOUSTICS</div>
+<h3 data-i18n="archive_cav_title">Теория кавитации: динамика пузырька</h3>
+<p data-i18n="archive_cav_text">Формулы Рэлея–Плессета и обзор CFD-моделей из конспекта-отчёта по НИР. Это аналитический обзор научных источников, а не результаты собственного CFD-эксперимента.</p>
+<div class="archive-provenance"><span data-i18n="archive_source_label">Источник:</span> <code>Кавитация_отчет_01_10_2025.pdf</code> · <span data-i18n="archive_cav_pages">стр. 41, 48–50</span></div>
+<a class="archive-pdf" data-i18n="archive_open_pdf" href="docs/archive/cavitation_theory_excerpt_2025.pdf" rel="noopener noreferrer" target="_blank">Открыть выдержку PDF ↗</a>
+</div></article>
+<article class="archive-card">
+<a aria-label="Увеличить оригинальный фрагмент" class="archive-visual" href="assets/archive/practice-xray.webp" rel="noopener noreferrer" target="_blank">
+<img alt="Медицинская техника: практика" decoding="async" loading="lazy" src="assets/archive/practice-xray.webp"/>
+</a>
+<div class="archive-details">
+<div class="archive-meta">2024 · INDUSTRY</div>
+<h3 data-i18n="archive_practice_title">Медицинская техника: практика</h3>
+<p data-i18n="archive_practice_text">Фотография рентгенодиагностической установки Р-600 «Полидиагност» из приложения отчёта по практике. В отчёте также описаны приёмка оборудования и техническая документация. Автор фотографии не установлен.</p>
+<div class="archive-provenance"><span data-i18n="archive_source_label">Источник:</span> <code>КолесникНА__отчёт_о_практике(1).pdf</code> · <span data-i18n="archive_practice_pages">стр. 5–7, 16</span></div>
+<a class="archive-pdf" data-i18n="archive_open_pdf" href="docs/archive/medical_equipment_practice_excerpt_2024.pdf" rel="noopener noreferrer" target="_blank">Открыть выдержку PDF ↗</a>
+</div></article>
+</div>
+<p class="archive-disclaimer" data-i18n="archive_note">Публикуются отобранные фрагменты исходных учебных работ, а не новые изображения или результаты. Чертежи, расчёты и фотографии подписаны отдельно; документы не подтверждают изготовление серийных устройств.</p>
+</div>
+</section>
+<section class="section achievements-section" id="achievements">
+<div class="section-heading"><span class="section-index">03</span><div><h2 data-i18n="ach_title">Достижения</h2><p data-i18n="ach_intro">Внешние подтверждения качества инженерной работы и расширения профессиональной подготовки.</p></div></div>
+<div class="achievement-grid">
+<article class="achievement-card award-card">
+<div class="achievement-copy"><div class="achievement-kicker" data-i18n="ach_award_kicker">Всероссийский конкурс ВКР • 2025</div><h3 data-i18n="ach_award_title">II место за выпускную работу «Разработка немедицинского миографа»</h3><p data-i18n="ach_award_text">30-й Всероссийский конкурс выпускных квалификационных работ по укрупнённой группе 12.00.00, направление 12.03.04 «Биотехнические системы и технологии».</p><span class="proof-chip" data-i18n="ach_award_chip">Призовая инженерная ВКР</span></div>
+<a class="certificate-frame" href="assets/thesis-award.jpg" rel="noopener noreferrer" target="_blank"><img alt="Диплом за II место во Всероссийском конкурсе ВКР" src="assets/thesis-award.jpg"/></a>
+</article><article class="achievement-card fpga-card">
+<div class="achievement-copy">
+<div class="achievement-kicker" data-i18n="ach_fpga_kicker">VI Фестиваль радиоэлектроники · 26 апреля 2024</div>
+<h3 data-i18n="ach_fpga_title">II место команды — конкурс «ПЛИС. Опережая сигналы»</h3>
+<p data-i18n="ach_fpga_text">Командная награда на VI Фестивале радиоэлектроники. Имя Никиты указано в дипломе среди участников. Это именно командное второе место.</p>
+<span class="proof-chip" data-i18n="ach_fpga_chip">Командная работа · ПЛИС · радиоэлектроника</span>
+</div>
+<a aria-label="Открыть фотографию диплома конкурса «ПЛИС. Опережая сигналы»" class="certificate-frame fpga-photo" href="assets/credentials/fpga-document.webp" rel="noopener noreferrer" target="_blank">
+<img alt="Оригинальный диплом команды за II место в конкурсе «ПЛИС. Опережая сигналы», VI Фестиваль радиоэлектроники, 26 апреля 2024" decoding="async" loading="lazy" src="assets/credentials/fpga-document.webp"/>
+</a>
+</article>
+<article class="achievement-card robot-card">
+<div class="achievement-copy"><div class="achievement-kicker" data-i18n="ach_robot_kicker">Открытая студенческая олимпиада «Надежда энергетики» • 2025</div><h3 data-i18n="ach_robot_title">Призёр III степени — профиль «Роботы в городе»</h3><p data-i18n="ach_robot_text">Официальный статус утверждён приказом НИУ «МЭИ» № 631 по итогам заключительного этапа олимпиады 2025 года.</p><span class="proof-chip" data-i18n="ach_robot_chip">Python • алгоритмы маршрутизации • робототехника</span></div>
+<a class="source-link proof-link" data-i18n="ach_robot_source" href="https://mpei.ru/AboutUniverse/OficialInfo/Orders2025/MPEI-25-631.pdf" rel="noopener noreferrer" target="_blank">Официальный приказ МЭИ ↗</a>
+</article>
+<article class="achievement-card hse-card">
+<div class="achievement-copy"><div class="achievement-kicker" data-i18n="ach_hse_kicker">НИУ ВШЭ • 2025</div><h3 data-i18n="ach_hse_title">«Деловые переговоры: правовые стратегии»</h3><p data-i18n="ach_hse_text">Повышение квалификации объёмом 68 академических часов, 11 ноября — 22 декабря 2025 года.</p><span class="proof-chip">68 academic hours</span></div>
+<a class="certificate-frame" href="assets/hse-negotiations.jpg" rel="noopener noreferrer" target="_blank"><img alt="Удостоверение НИУ ВШЭ по программе Деловые переговоры: правовые стратегии" src="assets/hse-negotiations.jpg"/></a>
+</article>
+</div>
+</section><section class="section" id="publications">
+<div class="section-heading"><span class="section-index">04</span><div><h2 data-i18n="pub_title">Публикации и научные выступления</h2><p data-i18n="pub_intro">Публично подтверждённые результаты отделены от работ, которые ещё находятся в развитии.</p></div></div>
+<div class="timeline">
+<article class="timeline-item"><div class="timeline-year">2026</div><div class="timeline-content"><div class="status published" data-i18n="status_published">Опубликованные тезисы</div><h3 data-i18n="pub_fmcw_title">«Обзор диагностических систем на основе FMCW радаров»</h3><p data-i18n="pub_fmcw_text">XXXII Международная научно-техническая конференция студентов и аспирантов «Радиоэлектроника, электротехника и энергетика», НИУ МЭИ. Научный руководитель — Д. А. Балакин.</p><a class="source-link" data-i18n="open_proceedings" href="https://reepe.mpei.ru/abstracts/SiteAssets/Pages/XXXII-REEPE-2026/Blok_doklad_2026%2Bispr.pdf" rel="noopener noreferrer" target="_blank">Открыть сборник ↗</a></div></article>
+<article class="timeline-item muted"><div class="timeline-year">R&amp;D</div><div class="timeline-content"><div class="status developing" data-i18n="status_developing">В разработке</div><h3 data-i18n="pub_cav_title">Моделирование кавитации для медицинских применений</h3><p data-i18n="pub_cav_text">Рабочая исследовательская линия: от классической пузырьковой динамики к CFD-подходам, верификации и задачам ультразвукового тромболизиса.</p></div></article>
+</div>
+</section>
+<section class="section tone-section" id="education">
+<div class="section-heading"><span class="section-index">05</span><div><h2 data-i18n="edu_title">Образование</h2><p data-i18n="edu_intro">Технический фундамент дополняется программированием и педагогикой — это даёт профиль человека, который может и строить системы, и объяснять их.</p></div></div>
+<div class="institution-block">
+<strong data-i18n="institution_short">ФГБОУ ВО «НИУ «МЭИ»</strong>
+<span data-i18n="institution_full">Федеральное государственное бюджетное образовательное учреждение высшего образования «Национальный исследовательский университет «МЭИ»»</span>
+<span data-i18n="institution_unit">Институт радиотехники и электроники им. В. А. Котельникова • кафедра основ радиотехники</span>
+<a data-i18n="institution_source" href="https://mpei.ru/sveden/common/Pages/default.aspx" rel="noopener noreferrer" target="_blank">Официальные сведения об образовательной организации ↗</a>
+</div><div class="education-grid">
+<article class="edu-card primary-edu"><div class="edu-date">2021–2025</div><h3 data-i18n="edu_bsc_title">МЭИ — бакалавриат с отличием</h3><p><strong>12.03.04</strong> <span data-i18n="edu_bsc_program">«Биотехнические системы и технологии»</span></p><p class="subtle" data-i18n="edu_profile">Профиль: биотехнические и медицинские аппараты и системы.</p><div class="course-cloud"><span>DSP</span><span data-i18n="course_med_elec">медицинская электроника</span><span data-i18n="course_circuits">теория цепей</span><span>FPGA</span><span data-i18n="course_biophysics">биофизика</span><span data-i18n="course_measure">метрология</span></div></article>
+<article class="edu-card"><div class="edu-date" data-i18n="edu_now">сейчас</div><h3 data-i18n="edu_msc_title">МЭИ — магистратура</h3><p><strong>12.04.04</strong> <span data-i18n="edu_bsc_program">«Биотехнические системы и технологии»</span></p><p class="subtle" data-i18n="edu_msc_focus">Исследовательская работа на кафедре основ радиотехники.</p></article>
+<article class="edu-card qualification-card">
+<div class="edu-date">2025 · 252 ч.</div>
+<h3 data-i18n="edu_ped_title">Профессиональная переподготовка — «Преподаватель-ассистент»</h3>
+<p data-i18n="edu_ped_text">НИУ «МЭИ», программа «Педагогика и психология в профессиональной деятельности». 01.10.2025–23.12.2025. Квалификация «Преподаватель-ассистент».</p>
+<a aria-label="Фото: диплом о профессиональной переподготовке — Преподаватель-ассистент" class="qualification-photo" href="assets/credentials/pedagogy-document.webp" rel="noopener noreferrer" target="_blank">
+<img alt="Фрагмент оригинального диплома МЭИ, квалификация Преподаватель-ассистент, 252 часа" decoding="async" loading="lazy" src="assets/credentials/pedagogy-document.webp"/>
+</a>
+<p class="qualification-footnote" data-i18n="edu_photo_note">Фрагмент фотографии диплома. Регистрационные данные и подписи не публикуются.</p>
+</article>
+<article class="edu-card"><div class="edu-date">2025</div><h3>Julia Summer School 2025</h3><p data-i18n="edu_julia_text">15 академических часов, 25–29 августа 2025.</p><div class="tiny-tags"><span>Julia</span><span>scientific computing</span></div></article>
+<article class="edu-card"><div class="edu-date">2025</div><h3 data-i18n="edu_hse_title">НИУ ВШЭ — деловые переговоры</h3><p data-i18n="edu_hse_text">Повышение квалификации «Деловые переговоры: правовые стратегии», 68 академических часов.</p><div class="tiny-tags"><span>negotiation</span><span>legal strategy</span><span>communication</span></div></article><article class="edu-card"><div class="edu-date">2025</div><h3 data-i18n="edu_mri_title">НИЯУ МИФИ — основы магнитно-резонансной томографии</h3><p data-i18n="edu_mri_text">Курс объёмом 2 зачётные единицы: физические основы МРТ, формирование изображений, аппаратура, обработка данных и применение ИИ.</p><div class="tiny-tags"><span>MRI</span><span>RF pulses</span><span>image formation</span><span>AI</span></div></article><article class="edu-card qualification-card">
+<div class="edu-date">2025 · 252 ч.</div>
+<h3 data-i18n="edu_programmer_title">Профессиональная переподготовка — «Программист»</h3>
+<p data-i18n="edu_programmer_text">НИУ «МЭИ», программа «Алгоритмизация и разработка программ для предприятий ТЭК». 04.10.2024–04.07.2025. Квалификация «Программист».</p>
+<a aria-label="Фото: диплом о профессиональной переподготовке — Программист" class="qualification-photo" href="assets/credentials/programmer-document.webp" rel="noopener noreferrer" target="_blank">
+<img alt="Фрагмент оригинального диплома МЭИ, квалификация Программист, 252 часа" decoding="async" loading="lazy" src="assets/credentials/programmer-document.webp"/>
+</a>
+<p class="qualification-footnote" data-i18n="edu_photo_note">Фрагмент фотографии диплома. Регистрационные данные и подписи не публикуются.</p>
+</article>
+</div>
+</section>
+<section class="section">
+<div class="section-heading"><span class="section-index">06</span><div><h2 data-i18n="skills_title">Компетенции и инструменты</h2><p data-i18n="skills_intro">Технические навыки — опора; широкая междисциплинарность — способ видеть систему целиком.</p></div></div>
+<div class="skills-layout">
+<div class="skill-block"><h3 data-i18n="skills_technical">Техническое ядро</h3><div class="skill-list"><span>Digital Signal Processing</span><span>FMCW / Radar fundamentals</span><span>Biomedical instrumentation</span><span>Medical electronics</span><span>MATLAB</span><span>LabVIEW</span><span>Python</span><span>MNE-Python</span><span>SVM fundamentals</span><span>BLE / NRF52832</span><span>PCB design</span><span>Digital / analog circuits</span><span>Measurement &amp; metrology</span><span>Research reporting</span></div></div>
+<div class="competency-passport"><h3 data-i18n="comp_title">Паспорт универсальных компетенций</h3><div class="competency-row high"><span data-i18n="comp_self">Саморазвитие</span><b>620</b><i class="score-bar-92"></i></div><div class="competency-row high"><span data-i18n="comp_client">Клиентоориентированность</span><b>599</b><i class="score-bar-88"></i></div><div class="competency-row"><span data-i18n="comp_result">Ориентация на результат</span><b>561</b><i class="score-bar-80"></i></div><div class="competency-row"><span data-i18n="comp_plan">Планирование и организация</span><b>534</b><i class="score-bar-75"></i></div><div class="competency-row"><span data-i18n="comp_analysis">Анализ информации и решения</span><b>507</b><i class="score-bar-70"></i></div><small data-i18n="comp_note">Результаты Центра компетенций; баллы показаны как исходные значения документа, не как проценты.</small></div>
+</div>
+</section>
+<section class="section quote-section">
+<div class="section-heading"><span class="section-index">07</span><div><h2 data-i18n="rec_title">Рекомендации преподавателей</h2></div></div>
+<div class="quotes"><blockquote><p data-i18n="quote_shalimova">«Интеллектуальные способности, трудовая дисциплина и потенциал к исследовательской работе».</p><footer data-i18n="quote_shalimova_by">Е. В. Шалимова — заведующая кафедрой основ радиотехники МЭИ</footer></blockquote><blockquote><p>“I recommend Nikita as a promising researcher.”</p><footer data-i18n="quote_toropchin_by">Д. С. Торопчин — преподаватель цифровой обработки сигналов, МЭИ</footer></blockquote></div>
+</section>
+<section class="section faculty-section" id="faculty">
+<div class="section-heading"><span class="section-index">08</span><div>
+<h2><span class="ru-only">Преподаватели и наставники</span><span class="en-only">Teachers and mentors</span></h2>
+<p><span class="ru-only">Люди, у которых я учился. Порядок соответствует подтверждённым учёным званиям; внутри групп — учёной степени и алфавиту.</span><span class="en-only">The people I have studied with. Grouped by verified academic titles, then by degree and alphabetically.</span></p>
+</div></div>
+<div class="faculty-content">
+<div class="faculty-toolbar"><div class="faculty-caption"><span class="ru-only">Полный список: 50 фамилий · 47 сопоставленных профилей</span><span class="en-only">Full list: 50 surnames · 47 identified profiles</span></div>
+<label class="faculty-search-label"><span><span class="ru-only">Найти преподавателя</span><span class="en-only">Find a teacher</span></span><input aria-label="Поиск по преподавателям" autocomplete="off" id="facultySearch" placeholder="Фамилия / Surname" type="search"/></label>
+</div>
+<div class="faculty-groups"><details class="faculty-group" open=""><summary><span><span class="ru-only">Учёное звание «Профессор»</span><span class="en-only">Academic title: Professor</span></span><small>2</small></summary><div class="faculty-grid"><article class="faculty-person" data-faculty-search="кирсанов михаил николаевич kirsanov mikhail nikolaevich">
+<h4><span class="ru-only">Кирсанов Михаил Николаевич</span><span class="en-only">Kirsanov Mikhail Nikolaevich</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: профессор</span><span class="en-only">Position: Professor (position)</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: доктор физико-математических наук</span><span class="en-only">Degree: Doctor of Physical and Mathematical Sciences</span></div>
+<div class="faculty-detail faculty-title"><span class="ru-only">Учёное звание: профессор</span><span class="en-only">Academic title: Professor</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/bio_sis_tech.aspx" rel="noopener noreferrer" target="_blank"><span class="ru-only">Реестр МЭИ: биотехнические системы ↗</span><span class="en-only">MPEI faculty register: biotechnical systems ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="крамм михаил николаевич kramm mikhail nikolaevich">
+<h4><span class="ru-only">Крамм Михаил Николаевич</span><span class="en-only">Kramm Mikhail Nikolaevich</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: профессор</span><span class="en-only">Position: Professor (position)</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: доктор технических наук</span><span class="en-only">Degree: Doctor of Technical Sciences</span></div>
+<div class="faculty-detail faculty-title"><span class="ru-only">Учёное звание: профессор</span><span class="en-only">Academic title: Professor</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/default.aspx?short=/sveden/employees/pps/radioelektronnye-sistemy-i-kompleksy_01997bd2-8a59-762e-add1-d705c5baa03b.html" rel="noopener noreferrer" target="_blank"><span class="ru-only">Сведения МЭИ ↗</span><span class="en-only">MPEI source ↗</span></a>
+</article></div></details><details class="faculty-group"><summary><span><span class="ru-only">Учёное звание «Доцент»</span><span class="en-only">Academic title: Associate Professor</span></span><small>18</small></summary><div class="faculty-grid"><article class="faculty-person" data-faculty-search="галимбеков айрат дамирович galimbekov ayrat damirovich">
+<h4><span class="ru-only">Галимбеков Айрат Дамирович</span><span class="en-only">Galimbekov Ayrat Damirovich</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: профессор</span><span class="en-only">Position: Professor (position)</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: доктор физико-математических наук</span><span class="en-only">Degree: Doctor of Physical and Mathematical Sciences</span></div>
+<div class="faculty-detail faculty-title"><span class="ru-only">Учёное звание: доцент</span><span class="en-only">Academic title: Associate Professor</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/default.aspx?short=/sveden/employees/pps/matematicheskoe-i-programmnoe-obespechenie-vychislitelynyh-mashin-i-kompyyuternyh-setey_01997bd2-a40c-7545-87c0-f67be5654279.html" rel="noopener noreferrer" target="_blank"><span class="ru-only">Сведения МЭИ ↗</span><span class="en-only">MPEI source ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="гришаева юлия михайловна grishaeva yuliya mikhaylovna">
+<h4><span class="ru-only">Гришаева Юлия Михайловна</span><span class="en-only">Grishaeva Yuliya Mikhaylovna</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: профессор</span><span class="en-only">Position: Professor (position)</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: доктор педагогических наук</span><span class="en-only">Degree: Doctor of Pedagogical Sciences</span></div>
+<div class="faculty-detail faculty-title"><span class="ru-only">Учёное звание: доцент</span><span class="en-only">Academic title: Associate Professor</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/default.aspx?short=/sveden/employees/pps/upravlenie-vysokovolytnymi-elektroenergeticheskimi-obyektami-i-kompleksami_01997bd2-a2f6-716b-bd85-bc7284371628.html" rel="noopener noreferrer" target="_blank"><span class="ru-only">Сведения МЭИ ↗</span><span class="en-only">MPEI source ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="куликов роман сергеевич kulikov roman sergeevich">
+<h4><span class="ru-only">Куликов Роман Сергеевич</span><span class="en-only">Kulikov Roman Sergeevich</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: директор Института радиотехники и электроники</span><span class="en-only">Position: Director, Institute of Radio Engineering and Electronics</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: доктор технических наук</span><span class="en-only">Degree: Doctor of Technical Sciences</span></div>
+<div class="faculty-detail faculty-title"><span class="ru-only">Учёное звание: доцент</span><span class="en-only">Academic title: Associate Professor</span></div>
+<a class="faculty-source" href="https://reepe.mpei.ru/about/Pages/heads.aspx" rel="noopener noreferrer" target="_blank"><span class="ru-only">Сведения МЭИ ↗</span><span class="en-only">MPEI source ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="архангельский алексей николаевич arkhangelskiy aleksey nikolaevich">
+<h4><span class="ru-only">Архангельский Алексей Николаевич</span><span class="en-only">Arkhangelskiy Aleksey Nikolaevich</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: доцент</span><span class="en-only">Position: Associate Professor (position)</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: кандидат физико-математических наук</span><span class="en-only">Degree: Candidate of Physical and Mathematical Sciences</span></div>
+<div class="faculty-detail faculty-title"><span class="ru-only">Учёное звание: доцент</span><span class="en-only">Academic title: Associate Professor</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/default.aspx" rel="noopener noreferrer" target="_blank"><span class="ru-only">Реестр педагогического состава МЭИ ↗</span><span class="en-only">MPEI academic staff register ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="бабаев джамиль джониевич babaev dzhamil dzhonievich">
+<h4><span class="ru-only">Бабаев Джамиль Джониевич</span><span class="en-only">Babaev Dzhamil Dzhonievich</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: доцент</span><span class="en-only">Position: Associate Professor (position)</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: кандидат технических наук</span><span class="en-only">Degree: Candidate of Technical Sciences</span></div>
+<div class="faculty-detail faculty-title"><span class="ru-only">Учёное звание: доцент</span><span class="en-only">Academic title: Associate Professor</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/default.aspx" rel="noopener noreferrer" target="_blank"><span class="ru-only">Реестр педагогического состава МЭИ ↗</span><span class="en-only">MPEI academic staff register ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="гонцов ренат равилевич gontsov renat ravilevich">
+<h4><span class="ru-only">Гонцов Ренат Равилевич</span><span class="en-only">Gontsov Renat Ravilevich</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: доцент</span><span class="en-only">Position: Associate Professor (position)</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: кандидат физико-математических наук</span><span class="en-only">Degree: Candidate of Physical and Mathematical Sciences</span></div>
+<div class="faculty-detail faculty-title"><span class="ru-only">Учёное звание: доцент</span><span class="en-only">Academic title: Associate Professor</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/radiotech.aspx?op=%D0%A0%D0%B0%D0%B4%D0%B8%D0%BE%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D1%81%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B2%D0%B0%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%D0%B8%2C%20%D0%BF%D1%80%D0%B8%D0%B5%D0%BC%D0%B0%20%D0%B8%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8%20%D1%81%D0%B8%D0%B3%D0%BD%D0%B0%D0%BB%D0%BE%D0%B2" rel="noopener noreferrer" target="_blank"><span class="ru-only">Сведения МЭИ ↗</span><span class="en-only">MPEI source ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="гончарова елена борисовна goncharova elena borisovna">
+<h4><span class="ru-only">Гончарова Елена Борисовна</span><span class="en-only">Goncharova Elena Borisovna</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: доцент</span><span class="en-only">Position: Associate Professor (position)</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: кандидат экономических наук</span><span class="en-only">Degree: Candidate of Economic Sciences</span></div>
+<div class="faculty-detail faculty-title"><span class="ru-only">Учёное звание: доцент</span><span class="en-only">Academic title: Associate Professor</span></div>
+<a class="faculty-source" href="https://mpei.ru/Structure/Universe/inei/structure/mep/Pages/people.aspx" rel="noopener noreferrer" target="_blank"><span class="ru-only">Кафедра менеджмента МЭИ ↗</span><span class="en-only">MPEI Management Department ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="жихарева галина владимировна zhikhareva galina vladimirovna">
+<h4><span class="ru-only">Жихарева Галина Владимировна</span><span class="en-only">Zhikhareva Galina Vladimirovna</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: доцент</span><span class="en-only">Position: Associate Professor (position)</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: кандидат технических наук</span><span class="en-only">Degree: Candidate of Technical Sciences</span></div>
+<div class="faculty-detail faculty-title"><span class="ru-only">Учёное звание: доцент</span><span class="en-only">Academic title: Associate Professor</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/bio_sis_tech.aspx" rel="noopener noreferrer" target="_blank"><span class="ru-only">Реестр МЭИ: биотехнические системы ↗</span><span class="en-only">MPEI faculty register: biotechnical systems ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="зелепукина елена владимировна zelepukina elena vladimirovna">
+<h4><span class="ru-only">Зелепукина Елена Владимировна</span><span class="en-only">Zelepukina Elena Vladimirovna</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: доцент</span><span class="en-only">Position: Associate Professor (position)</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: кандидат технических наук</span><span class="en-only">Degree: Candidate of Technical Sciences</span></div>
+<div class="faculty-detail faculty-title"><span class="ru-only">Учёное звание: доцент</span><span class="en-only">Academic title: Associate Professor</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/bio_sis_tech.aspx" rel="noopener noreferrer" target="_blank"><span class="ru-only">Реестр МЭИ: биотехнические системы ↗</span><span class="en-only">MPEI faculty register: biotechnical systems ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="крупин владимир григорьевич krupin vladimir grigorevich">
+<h4><span class="ru-only">Крупин Владимир Григорьевич</span><span class="en-only">Krupin Vladimir Grigorevich</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: доцент</span><span class="en-only">Position: Associate Professor (position)</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: кандидат физико-математических наук</span><span class="en-only">Degree: Candidate of Physical and Mathematical Sciences</span></div>
+<div class="faculty-detail faculty-title"><span class="ru-only">Учёное звание: доцент</span><span class="en-only">Academic title: Associate Professor</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/bio_sis_tech.aspx" rel="noopener noreferrer" target="_blank"><span class="ru-only">Реестр МЭИ: биотехнические системы ↗</span><span class="en-only">MPEI faculty register: biotechnical systems ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="крутских владислав викторович krutskikh vladislav viktorovich">
+<h4><span class="ru-only">Крутских Владислав Викторович</span><span class="en-only">Krutskikh Vladislav Viktorovich</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: доцент, заведующий учебной лабораторией</span><span class="en-only">Position: Associate Professor; Head of Teaching Laboratory</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: кандидат технических наук</span><span class="en-only">Degree: Candidate of Technical Sciences</span></div>
+<div class="faculty-detail faculty-title"><span class="ru-only">Учёное звание: доцент</span><span class="en-only">Academic title: Associate Professor</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/bio_sis_tech.aspx" rel="noopener noreferrer" target="_blank"><span class="ru-only">Реестр МЭИ: биотехнические системы ↗</span><span class="en-only">MPEI faculty register: biotechnical systems ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="мясникова надежда викторовна myasnikova nadezhda viktorovna">
+<h4><span class="ru-only">Мясникова Надежда Викторовна</span><span class="en-only">Myasnikova Nadezhda Viktorovna</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: доцент</span><span class="en-only">Position: Associate Professor (position)</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: кандидат химических наук</span><span class="en-only">Degree: Candidate of Chemical Sciences</span></div>
+<div class="faculty-detail faculty-title"><span class="ru-only">Учёное звание: доцент</span><span class="en-only">Academic title: Associate Professor</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/bio_sis_tech.aspx" rel="noopener noreferrer" target="_blank"><span class="ru-only">Реестр МЭИ: биотехнические системы ↗</span><span class="en-only">MPEI faculty register: biotechnical systems ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="петрунина елена валерьевна petrunina elena valerevna">
+<h4><span class="ru-only">Петрунина Елена Валерьевна</span><span class="en-only">Petrunina Elena Valerevna</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: доцент</span><span class="en-only">Position: Associate Professor (position)</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: кандидат технических наук</span><span class="en-only">Degree: Candidate of Technical Sciences</span></div>
+<div class="faculty-detail faculty-title"><span class="ru-only">Учёное звание: доцент</span><span class="en-only">Academic title: Associate Professor</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/default.aspx?short=/sveden/employees/pps/radioelektronika-v-biotehnicheskih-i-medicinskih-apparatah-i-sistemah_01997bd2-ebea-7ec2-83a3-fd750a9aaa53.html" rel="noopener noreferrer" target="_blank"><span class="ru-only">Сведения МЭИ ↗</span><span class="en-only">MPEI source ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="сазонова людмила тимофеевна sazonova lyudmila timofeevna">
+<h4><span class="ru-only">Сазонова Людмила Тимофеевна</span><span class="en-only">Sazonova Lyudmila Timofeevna</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: доцент</span><span class="en-only">Position: Associate Professor (position)</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: кандидат технических наук</span><span class="en-only">Degree: Candidate of Technical Sciences</span></div>
+<div class="faculty-detail faculty-title"><span class="ru-only">Учёное звание: доцент</span><span class="en-only">Academic title: Associate Professor</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/bio_sis_tech.aspx" rel="noopener noreferrer" target="_blank"><span class="ru-only">Реестр МЭИ: биотехнические системы ↗</span><span class="en-only">MPEI faculty register: biotechnical systems ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="сальникова татьяна анатольевна salnikova tatyana anatolevna">
+<h4><span class="ru-only">Сальникова Татьяна Анатольевна</span><span class="en-only">Salnikova Tatyana Anatolevna</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: доцент</span><span class="en-only">Position: Associate Professor (position)</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: кандидат физико-математических наук</span><span class="en-only">Degree: Candidate of Physical and Mathematical Sciences</span></div>
+<div class="faculty-detail faculty-title"><span class="ru-only">Учёное звание: доцент</span><span class="en-only">Academic title: Associate Professor</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/bio_sis_tech.aspx" rel="noopener noreferrer" target="_blank"><span class="ru-only">Реестр МЭИ: биотехнические системы ↗</span><span class="en-only">MPEI faculty register: biotechnical systems ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="сизякова анна юрьевна sizyakova anna yurevna">
+<h4><span class="ru-only">Сизякова Анна Юрьевна</span><span class="en-only">Sizyakova Anna Yurevna</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: доцент</span><span class="en-only">Position: Associate Professor (position)</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: кандидат технических наук</span><span class="en-only">Degree: Candidate of Technical Sciences</span></div>
+<div class="faculty-detail faculty-title"><span class="ru-only">Учёное звание: доцент</span><span class="en-only">Academic title: Associate Professor</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/bio_sis_tech.aspx" rel="noopener noreferrer" target="_blank"><span class="ru-only">Реестр МЭИ: биотехнические системы ↗</span><span class="en-only">MPEI faculty register: biotechnical systems ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="старостина людмила алексеевна starostina lyudmila alekseevna">
+<h4><span class="ru-only">Старостина Людмила Алексеевна</span><span class="en-only">Starostina Lyudmila Alekseevna</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: доцент</span><span class="en-only">Position: Associate Professor (position)</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: кандидат технических наук</span><span class="en-only">Degree: Candidate of Technical Sciences</span></div>
+<div class="faculty-detail faculty-title"><span class="ru-only">Учёное звание: доцент</span><span class="en-only">Academic title: Associate Professor</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/bio_sis_tech.aspx" rel="noopener noreferrer" target="_blank"><span class="ru-only">Реестр МЭИ: биотехнические системы ↗</span><span class="en-only">MPEI faculty register: biotechnical systems ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="шалимова елена владимировна shalimova elena vladimirovna">
+<h4><span class="ru-only">Шалимова Елена Владимировна</span><span class="en-only">Shalimova Elena Vladimirovna</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: заведующая кафедрой основ радиотехники, доцент</span><span class="en-only">Position: Head, Department of Fundamentals of Radio Engineering; Associate Professor</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: кандидат технических наук</span><span class="en-only">Degree: Candidate of Technical Sciences</span></div>
+<div class="faculty-detail faculty-title"><span class="ru-only">Учёное звание: доцент</span><span class="en-only">Academic title: Associate Professor</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/bio_sis_tech.aspx" rel="noopener noreferrer" target="_blank"><span class="ru-only">Реестр МЭИ: биотехнические системы ↗</span><span class="en-only">MPEI faculty register: biotechnical systems ↗</span></a>
+</article></div></details><details class="faculty-group"><summary><span><span class="ru-only">Другое подтверждённое учёное звание</span><span class="en-only">Other confirmed academic title</span></span><small>1</small></summary><div class="faculty-grid"><article class="faculty-person" data-faculty-search="северин александр евгеньевич severin aleksandr evgenevich">
+<h4><span class="ru-only">Северин Александр Евгеньевич</span><span class="en-only">Severin Aleksandr Evgenevich</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: профессор</span><span class="en-only">Position: Professor (position)</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: доктор медицинских наук</span><span class="en-only">Degree: Doctor of Medical Sciences</span></div>
+<div class="faculty-detail faculty-title"><span class="ru-only">Учёное звание: старший научный сотрудник</span><span class="en-only">Academic title: Senior Research Fellow</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/bio_sis_tech.aspx" rel="noopener noreferrer" target="_blank"><span class="ru-only">Реестр МЭИ: биотехнические системы ↗</span><span class="en-only">MPEI faculty register: biotechnical systems ↗</span></a>
+</article></div></details><details class="faculty-group"><summary><span><span class="ru-only">Учёное звание не установлено по источникам</span><span class="en-only">Academic title not established from the sources</span></span><small>26</small></summary><div class="faculty-grid"><article class="faculty-person" data-faculty-search="али зайд салех салем ali zayd salekh salem">
+<h4><span class="ru-only">Али Зайд Салех Салем</span><span class="en-only">Ali Zayd Salekh Salem</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: доцент</span><span class="en-only">Position: Associate Professor (position)</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: кандидат технических наук</span><span class="en-only">Degree: Candidate of Technical Sciences</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/bio_sis_tech.aspx" rel="noopener noreferrer" target="_blank"><span class="ru-only">Реестр МЭИ: биотехнические системы ↗</span><span class="en-only">MPEI faculty register: biotechnical systems ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="балашков михаил владимирович balashkov mikhail vladimirovich">
+<h4><span class="ru-only">Балашков Михаил Владимирович</span><span class="en-only">Balashkov Mikhail Vladimirovich</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: доцент, ведущий инженер</span><span class="en-only">Position: Associate Professor; Lead Engineer</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: кандидат технических наук</span><span class="en-only">Degree: Candidate of Technical Sciences</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/bio_sis_tech.aspx" rel="noopener noreferrer" target="_blank"><span class="ru-only">Реестр МЭИ: биотехнические системы ↗</span><span class="en-only">MPEI faculty register: biotechnical systems ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="владимиров сергей валерьевич vladimirov sergey valerevich">
+<h4><span class="ru-only">Владимиров Сергей Валерьевич</span><span class="en-only">Vladimirov Sergey Valerevich</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: доцент, заместитель начальника центра</span><span class="en-only">Position: Associate Professor; Deputy Center Head</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: кандидат технических наук</span><span class="en-only">Degree: Candidate of Technical Sciences</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/bio_sis_tech.aspx" rel="noopener noreferrer" target="_blank"><span class="ru-only">Реестр МЭИ: биотехнические системы ↗</span><span class="en-only">MPEI faculty register: biotechnical systems ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="гибадуллин артур артурович gibadullin artur arturovich">
+<h4><span class="ru-only">Гибадуллин Артур Артурович</span><span class="en-only">Gibadullin Artur Arturovich</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: доцент</span><span class="en-only">Position: Associate Professor (position)</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: кандидат экономических наук</span><span class="en-only">Degree: Candidate of Economic Sciences</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/bio_sis_tech.aspx" rel="noopener noreferrer" target="_blank"><span class="ru-only">Реестр МЭИ: биотехнические системы ↗</span><span class="en-only">MPEI faculty register: biotechnical systems ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="завьялова анна александровна zavyalova anna aleksandrovna">
+<h4><span class="ru-only">Завьялова Анна Александровна</span><span class="en-only">Zavyalova Anna Aleksandrovna</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: доцент</span><span class="en-only">Position: Associate Professor (position)</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: кандидат технических наук</span><span class="en-only">Degree: Candidate of Technical Sciences</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/11_04_01.aspx?op=%D0%A0%D0%B0%D0%B4%D0%B8%D0%BE%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B" rel="noopener noreferrer" target="_blank"><span class="ru-only">Реестр МЭИ: радиотехника ↗</span><span class="en-only">MPEI faculty register: radio engineering ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="ионова татьяна витальевна ionova tatyana vitalevna">
+<h4><span class="ru-only">Ионова Татьяна Витальевна</span><span class="en-only">Ionova Tatyana Vitalevna</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: доцент</span><span class="en-only">Position: Associate Professor (position)</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: кандидат физико-математических наук</span><span class="en-only">Degree: Candidate of Physical and Mathematical Sciences</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/default.aspx" rel="noopener noreferrer" target="_blank"><span class="ru-only">Реестр педагогического состава МЭИ ↗</span><span class="en-only">MPEI academic staff register ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="копылова елена владимировна kopylova elena vladimirovna">
+<h4><span class="ru-only">Копылова Елена Владимировна</span><span class="en-only">Kopylova Elena Vladimirovna</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: доцент</span><span class="en-only">Position: Associate Professor (position)</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: кандидат технических наук</span><span class="en-only">Degree: Candidate of Technical Sciences</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/bio_sis_tech.aspx" rel="noopener noreferrer" target="_blank"><span class="ru-only">Реестр МЭИ: биотехнические системы ↗</span><span class="en-only">MPEI faculty register: biotechnical systems ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="королев илья викторович korolev ilya viktorovich">
+<h4><span class="ru-only">Королев Илья Викторович</span><span class="en-only">Korolev Ilya Viktorovich</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: доцент</span><span class="en-only">Position: Associate Professor (position)</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: кандидат технических наук</span><span class="en-only">Degree: Candidate of Technical Sciences</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/bio_sis_tech.aspx" rel="noopener noreferrer" target="_blank"><span class="ru-only">Реестр МЭИ: биотехнические системы ↗</span><span class="en-only">MPEI faculty register: biotechnical systems ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="меркулов андрей александрович merkulov andrey aleksandrovich">
+<h4><span class="ru-only">Меркулов Андрей Александрович</span><span class="en-only">Merkulov Andrey Aleksandrovich</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: доцент, руководитель научной группы</span><span class="en-only">Position: Associate Professor; Research Group Leader</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: кандидат технических наук</span><span class="en-only">Degree: Candidate of Technical Sciences</span></div>
+<a class="faculty-source" href="https://mpei.ru/science/sciensegroup/Pages/default.aspx" rel="noopener noreferrer" target="_blank"><span class="ru-only">Научные группы МЭИ ↗</span><span class="en-only">MPEI research groups ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="можакова ольга александровна mozhakova olga aleksandrovna">
+<h4><span class="ru-only">Можакова Ольга Александровна</span><span class="en-only">Mozhakova Olga Aleksandrovna</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: старший преподаватель</span><span class="en-only">Position: Senior Lecturer</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: кандидат технических наук</span><span class="en-only">Degree: Candidate of Technical Sciences</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/bio_sis_tech.aspx" rel="noopener noreferrer" target="_blank"><span class="ru-only">Реестр МЭИ: биотехнические системы ↗</span><span class="en-only">MPEI faculty register: biotechnical systems ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="плутешко андрей владимирович pluteshko andrey vladimirovich">
+<h4><span class="ru-only">Плутешко Андрей Владимирович</span><span class="en-only">Pluteshko Andrey Vladimirovich</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: доцент, ведущий инженер</span><span class="en-only">Position: Associate Professor; Lead Engineer</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: кандидат технических наук</span><span class="en-only">Degree: Candidate of Technical Sciences</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/11_04_01.aspx?op=%D0%A0%D0%B0%D0%B4%D0%B8%D0%BE%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B" rel="noopener noreferrer" target="_blank"><span class="ru-only">Реестр МЭИ: радиотехника ↗</span><span class="en-only">MPEI faculty register: radio engineering ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="силаева елена владимировна silaeva elena vladimirovna">
+<h4><span class="ru-only">Силаева Елена Владимировна</span><span class="en-only">Silaeva Elena Vladimirovna</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: доцент, старший преподаватель</span><span class="en-only">Position: Associate Professor; Senior Lecturer</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: кандидат технических наук</span><span class="en-only">Degree: Candidate of Technical Sciences</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/bio_sis_tech.aspx" rel="noopener noreferrer" target="_blank"><span class="ru-only">Реестр МЭИ: биотехнические системы ↗</span><span class="en-only">MPEI faculty register: biotechnical systems ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="стрелков николай олегович strelkov nikolay olegovich">
+<h4><span class="ru-only">Стрелков Николай Олегович</span><span class="en-only">Strelkov Nikolay Olegovich</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: доцент</span><span class="en-only">Position: Associate Professor (position)</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: кандидат технических наук</span><span class="en-only">Degree: Candidate of Technical Sciences</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/bio_sis_tech.aspx" rel="noopener noreferrer" target="_blank"><span class="ru-only">Реестр МЭИ: биотехнические системы ↗</span><span class="en-only">MPEI faculty register: biotechnical systems ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="торина елена михайловна torina elena mikhaylovna">
+<h4><span class="ru-only">Торина Елена Михайловна</span><span class="en-only">Torina Elena Mikhaylovna</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: доцент</span><span class="en-only">Position: Associate Professor (position)</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: кандидат технических наук</span><span class="en-only">Degree: Candidate of Technical Sciences</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/bio_sis_tech.aspx" rel="noopener noreferrer" target="_blank"><span class="ru-only">Реестр МЭИ: биотехнические системы ↗</span><span class="en-only">MPEI faculty register: biotechnical systems ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="юдин иван валерьевич yudin ivan valerevich">
+<h4><span class="ru-only">Юдин Иван Валерьевич</span><span class="en-only">Yudin Ivan Valerevich</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: доцент</span><span class="en-only">Position: Associate Professor (position)</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: кандидат политических наук</span><span class="en-only">Degree: Candidate of Political Sciences</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/bio_sis_tech.aspx" rel="noopener noreferrer" target="_blank"><span class="ru-only">Реестр МЭИ: биотехнические системы ↗</span><span class="en-only">MPEI faculty register: biotechnical systems ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="архипова светлана викторовна arkhipova svetlana viktorovna">
+<h4><span class="ru-only">Архипова Светлана Викторовна</span><span class="en-only">Arkhipova Svetlana Viktorovna</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: старший преподаватель</span><span class="en-only">Position: Senior Lecturer</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: сведения об учёной степени не приведены</span><span class="en-only">Degree: Degree not specified in the cited source</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/bio_sis_tech.aspx" rel="noopener noreferrer" target="_blank"><span class="ru-only">Реестр МЭИ: биотехнические системы ↗</span><span class="en-only">MPEI faculty register: biotechnical systems ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="белю людмила петровна belyu lyudmila petrovna">
+<h4><span class="ru-only">Белю Людмила Петровна</span><span class="en-only">Belyu Lyudmila Petrovna</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: доцент</span><span class="en-only">Position: Associate Professor (position)</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: сведения об учёной степени не приведены</span><span class="en-only">Degree: Degree not specified in the cited source</span></div>
+<a class="faculty-source" href="https://mpei.ru/Structure/Universe/epe/structure/rpaaps/Pages/default.aspx" rel="noopener noreferrer" target="_blank"><span class="ru-only">Кафедра РЗиАЭ МЭИ ↗</span><span class="en-only">MPEI Department of Protection and Automation ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="графов михаил валерьевич grafov mikhail valerevich">
+<h4><span class="ru-only">Графов Михаил Валерьевич</span><span class="en-only">Grafov Mikhail Valerevich</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: старший преподаватель</span><span class="en-only">Position: Senior Lecturer</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: сведения об учёной степени не приведены</span><span class="en-only">Degree: Degree not specified in the cited source</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/default.aspx?short=/sveden/employees/pps/radionavigacionnye-sistemy-i-kompleksy_019d2e96-2490-7608-9e78-fa7d17b87227.html" rel="noopener noreferrer" target="_blank"><span class="ru-only">Сведения МЭИ ↗</span><span class="en-only">MPEI source ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="капитанова елена аркадьевна kapitanova elena arkadevna">
+<h4><span class="ru-only">Капитанова Елена Аркадьевна</span><span class="en-only">Kapitanova Elena Arkadevna</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: старший преподаватель</span><span class="en-only">Position: Senior Lecturer</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: сведения об учёной степени не приведены</span><span class="en-only">Degree: Degree not specified in the cited source</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/bio_sis_tech.aspx" rel="noopener noreferrer" target="_blank"><span class="ru-only">Реестр МЭИ: биотехнические системы ↗</span><span class="en-only">MPEI faculty register: biotechnical systems ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="наумова юлия дмитриевна naumova yuliya dmitrievna">
+<h4><span class="ru-only">Наумова Юлия Дмитриевна</span><span class="en-only">Naumova Yuliya Dmitrievna</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: старший преподаватель, начальник отдела</span><span class="en-only">Position: Senior Lecturer; Department Manager</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: сведения об учёной степени не приведены</span><span class="en-only">Degree: Degree not specified in the cited source</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/bio_sis_tech.aspx" rel="noopener noreferrer" target="_blank"><span class="ru-only">Реестр МЭИ: биотехнические системы ↗</span><span class="en-only">MPEI faculty register: biotechnical systems ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="просветов георгий иванович prosvetov georgiy ivanovich">
+<h4><span class="ru-only">Просветов Георгий Иванович</span><span class="en-only">Prosvetov Georgiy Ivanovich</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: старший преподаватель</span><span class="en-only">Position: Senior Lecturer</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: сведения об учёной степени не приведены</span><span class="en-only">Degree: Degree not specified in the cited source</span></div>
+<a class="faculty-source" href="https://himath.mpei.ru/сотрудники/" rel="noopener noreferrer" target="_blank"><span class="ru-only">Кафедра высшей математики МЭИ ↗</span><span class="en-only">MPEI Higher Mathematics Department ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="торопчин денис сергеевич toropchin denis sergeevich">
+<h4><span class="ru-only">Торопчин Денис Сергеевич</span><span class="en-only">Toropchin Denis Sergeevich</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: старший преподаватель</span><span class="en-only">Position: Senior Lecturer</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: сведения об учёной степени не приведены</span><span class="en-only">Degree: Degree not specified in the cited source</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/bio_sis_tech.aspx" rel="noopener noreferrer" target="_blank"><span class="ru-only">Реестр МЭИ: биотехнические системы ↗</span><span class="en-only">MPEI faculty register: biotechnical systems ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="фланден вячеслав сергеевич flanden vyacheslav sergeevich">
+<h4><span class="ru-only">Фланден Вячеслав Сергеевич</span><span class="en-only">Flanden Vyacheslav Sergeevich</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: старший преподаватель, заместитель директора института</span><span class="en-only">Position: Senior Lecturer; Deputy Institute Director</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: сведения об учёной степени не приведены</span><span class="en-only">Degree: Degree not specified in the cited source</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/bio_sis_tech.aspx" rel="noopener noreferrer" target="_blank"><span class="ru-only">Реестр МЭИ: биотехнические системы ↗</span><span class="en-only">MPEI faculty register: biotechnical systems ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="чеченя сергей александрович chechenya sergey aleksandrovich">
+<h4><span class="ru-only">Чеченя Сергей Александрович</span><span class="en-only">Chechenya Sergey Aleksandrovich</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: старший преподаватель, ведущий инженер</span><span class="en-only">Position: Senior Lecturer; Lead Engineer</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: сведения об учёной степени не приведены</span><span class="en-only">Degree: Degree not specified in the cited source</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/bio_sis_tech.aspx" rel="noopener noreferrer" target="_blank"><span class="ru-only">Реестр МЭИ: биотехнические системы ↗</span><span class="en-only">MPEI faculty register: biotechnical systems ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="юмашева анастасия михайловна yumasheva anastasiya mikhaylovna">
+<h4><span class="ru-only">Юмашева Анастасия Михайловна</span><span class="en-only">Yumasheva Anastasiya Mikhaylovna</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: старший преподаватель</span><span class="en-only">Position: Senior Lecturer</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: сведения об учёной степени не приведены</span><span class="en-only">Degree: Degree not specified in the cited source</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/11_04_01.aspx?op=%D0%A0%D0%B0%D0%B4%D0%B8%D0%BE%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B" rel="noopener noreferrer" target="_blank"><span class="ru-only">Реестр МЭИ: радиотехника ↗</span><span class="en-only">MPEI faculty register: radio engineering ↗</span></a>
+</article>
+<article class="faculty-person" data-faculty-search="яруллина жанна анатольевна yarullina zhanna anatolevna">
+<h4><span class="ru-only">Яруллина Жанна Анатольевна</span><span class="en-only">Yarullina Zhanna Anatolevna</span></h4>
+<div class="faculty-detail faculty-position"><span class="ru-only">Должность: старший преподаватель</span><span class="en-only">Position: Senior Lecturer</span></div>
+<div class="faculty-detail faculty-degree"><span class="ru-only">Учёная степень: сведения об учёной степени не приведены</span><span class="en-only">Degree: Degree not specified in the cited source</span></div>
+<a class="faculty-source" href="https://mpei.ru/sveden/employees/Pages/elentech.aspx?op=%D0%AD%D0%A2%D0%90%D0%9B%D0%9E%D0%9D%3A%20%D0%AD%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D1%8D%D0%BD%D0%B5%D1%80%D0%B3%D0%B5%D1%82%D0%B8%D0%BA%D0%B0%20%D0%B8%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0" rel="noopener noreferrer" target="_blank"><span class="ru-only">Сведения МЭИ ↗</span><span class="en-only">MPEI source ↗</span></a>
+</article></div></details><details class="faculty-group unresolved"><summary><span><span class="ru-only">Фамилии для уточнения</span><span class="en-only">Surnames pending identification</span></span><small>3</small></summary><div class="faculty-unknowns"><span>Ильин</span><span>Лебедева</span><span>Медовиков</span></div><p class="faculty-notice"><span class="ru-only">По этим фамилиям пока недостаточно сведений для уверенного указания полного ФИО, учёного звания и должности. Они сохранены без предположений.</span><span class="en-only">These surnames could not be reliably matched to full names, academic titles and positions; no details have been guessed.</span></p></details></div>
+<p class="faculty-footnote"><span class="ru-only">Должность и учёное звание указаны отдельно: одно не подменяет другое. Сведения собраны по открытым страницам НИУ «МЭИ»; при изменении кадровых данных возможны обновления. Это личный список, а не официальный перечень преподавателей учебной группы.</span><span class="en-only">Academic titles and positions are shown separately. Information comes from public MPEI sources and may change over time. This is a personal list, not an official class roster.</span></p>
+</div>
+</section><section class="section library-section">
+<div class="library-number">213</div><div class="library-copy"><h2 data-i18n="library_title">Личная библиотека как интеллектуальная карта</h2><p data-i18n="library_text">Техническое ядро окружают физика и математика, медицина и биология, психология, история, философия, языки и литература. Общий мотив — понять сложную систему от физического сигнала до человека и культуры.</p><div class="library-tags"><span>electronics</span><span>DSP / FPGA</span><span>physics</span><span>biomedicine</span><span>psychology</span><span>history</span><span>languages</span><span>philosophy</span></div></div>
+</section>
+<section class="section contact-section" id="contact">
+<div class="contact-copy"><span class="section-index">09</span><h2 data-i18n="contact_title">Контакты</h2><p data-i18n="contact_text">Для исследовательских проектов, конференций, инженерных задач и академического сотрудничества.</p><div class="contact-links"><a href="https://mpei.ru/" rel="noopener noreferrer" target="_blank">mpei.ru</a><a href="mailto:KolesnikNA@mpei.ru">KolesnikNA@mpei.ru</a><a href="tel:+79933497234">+7 993 349 72 34</a><a data-i18n="download_vcard" download="" href="nikita-kolesnik.vcf">Скачать vCard</a></div></div>
+<div class="contact-qr-wrap"><img alt="QR-код контакта Никиты Колесника" src="assets/contact-qr.png"/><span data-i18n="scan_contact">Сканировать контакт</span></div>
+</section>
+</main>
+<footer class="site-footer"><span>© 2026 Nikita A. Kolesnik</span><span data-i18n="footer_text">Персональный академический и инженерный профиль</span></footer>
+
+<!-- End-of-site personal book catalog. Text from MyLibrary(4).xlsx, rendered safely by local JavaScript. -->
+<section class="book-ticker" id="book-ticker" aria-labelledby="book-ticker-title">
+  <div class="book-ticker-head">
+    <div class="book-ticker-identity">
+      <span class="book-ticker-index">LIBRARY / 213</span>
+      <h2 id="book-ticker-title"><span class="ru-only">Личная библиотека: книги и авторы</span><span class="en-only">Personal library: books &amp; authors</span></h2>
+    </div>
+    <button id="toggle-book-ticker" class="book-ticker-button" type="button" aria-pressed="false">
+      <span class="ru-only">Пауза</span><span class="en-only">Pause</span>
+    </button>
+  </div>
+  <div class="book-ticker-window" tabindex="0" aria-label="213 книг: строка движется справа налево">
+    <div class="book-ticker-track" id="book-ticker-track"></div>
+  </div>
+  <p class="book-ticker-note"><span class="ru-only">213 записей из личного каталога · символ отражает предполагаемую тему книги · наведи курсор или нажми «Пауза», чтобы прочитать</span><span class="en-only">213 entries from the personal catalog · icons indicate approximate themes · hover or select Pause to read</span></p>
+</section>
+
+<script src="books-data.js" defer></script>
+<script src="script.js" defer></script>
+</body>
+</html>
